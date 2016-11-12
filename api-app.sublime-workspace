@@ -1,0 +1,337 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "PACKA",
+		"selected_items":
+		[
+			[
+				"PACKA",
+				"Package Control: Install Package"
+			],
+			[
+				"comman",
+				"Git: Custom Command"
+			],
+			[
+				"git remo",
+				"Git: Track Remote Branch"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git command",
+				"Git: Custom Command"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"git comand",
+				"Git: Custom Command"
+			],
+			[
+				"add.",
+				"Git: Add..."
+			],
+			[
+				"git comman",
+				"Git: Custom Command"
+			],
+			[
+				"git mer",
+				"Git: Merge Branch"
+			],
+			[
+				"git merge",
+				"Git: Merge Branch"
+			],
+			[
+				"qu",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"ch",
+				"Git: Change Branch"
+			],
+			[
+				"ad",
+				"Git: Add Current File"
+			],
+			[
+				"git add.",
+				"Git: Add..."
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git cha",
+				"Git: Change Branch"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"git statu",
+				"Git: Status"
+			],
+			[
+				"git lo",
+				"Git: Log All"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"qui",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				" git mer",
+				"Git: Merge Branch"
+			],
+			[
+				"a",
+				"Git: Add All"
+			],
+			[
+				"chang b",
+				"Git: Change Branch"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"git chan",
+				"Git: Change Branch"
+			],
+			[
+				"git del",
+				"Git: Delete Branch"
+			],
+			[
+				"git checkout",
+				"Git: Checkout Tag"
+			],
+			[
+				"git chang",
+				"Git: Change Branch"
+			],
+			[
+				"git change b",
+				"Git: Change Branch"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/khu/Sites/api-app",
+		"/Users/khu/Desktop/Ex_Files_LReact_js_2016/Exercise Files/Ch04/04_06/finish/css",
+		"/Users/khu/Desktop/Ex_Files_LReact_js_2016/Exercise Files/Ch04/04_06/finish/js"
+	],
+	"file_history":
+	[
+		"/Users/khu/Sites/api-app/app/controllers/application_controller.rb",
+		"/Users/khu/Sites/api-app/public/index.html",
+		"/Users/khu/Desktop/Ex_Files_LReact_js_2016/Exercise Files/Ch04/04_06/finish/index.html",
+		"/Users/khu/Sites/api-app/app/controllers/authentication_controller.rb",
+		"/Users/khu/Sites/api-app/Gemfile",
+		"/Users/khu/Sites/api-app/app/commands/authenticate_user.rb",
+		"/Users/khu/Sites/api-app/config/routes.rb",
+		"/Users/khu/Sites/api-app/app/commands/authorize_api_request.rb",
+		"/Users/khu/Sites/api-app/lib/json_web_token.rb",
+		"/Users/khu/Sites/api-app/config/application.rb",
+		"/Users/khu/Sites/api-app/app/models/user.rb",
+		"/Users/khu/Sites/api-app/config/database.yml",
+		"/Users/khu/git/my-rest/my-rest/Gemfile",
+		"/Users/khu/Desktop/EVOi/config/database.yml",
+		"/Users/khu/Desktop/EVOi/config/environment.rb",
+		"/Users/khu/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/khu/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"asset"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "",
+	"project": "api-app.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/git/EVOi/evoi.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 318.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
