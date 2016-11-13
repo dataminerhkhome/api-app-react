@@ -9,8 +9,68 @@ var Note = React.createClass({
     //         // transform: 'rotate(' + this.randomBetween(-15, 15) + 'deg)'
     //     };
     // },
+    //
+
+    handleTemplateDrop: function(e,ui){
+        var target_widget = $(e.target);
+
+
+            //get values from drag element
+            var template = ui.draggable.attr("data-template");
+
+
+
+            target_widget.attr("data-endpoint", end_point);
+            target_widget.data("widget", {
+              metric_group_by : g_by,
+              dimension1 : dim,
+              dimension2 : dim2,
+              kpi_template : template
+            });
+
+            target_widget.removeClass("empty");
+            target_widget.addClass("has-template");
+            target_widget.droppable("option", "accept", ".template");
+            target_widget.droppable("option", "drop", handleTemplateDrop);
+
+            // $(e.target).find("select.widget-charttype").attr("disabled", false);
+            // $(e.target).find("select.widget-export").attr("disabled", false);
+
+            // var widget_container_id = "#" + target_widget.attr("id");
+            // var chart_label = ui.draggable.attr('chart-label');
+            //check whether end_point existed
+            if (_dataFilter.hasEndPoint(end_point)) {
+
+              if (! target_widget.data('inwidget')) {
+                var aggtype_block = target_widget.find("ul.aggtype-block");
+                if (aggtype_block.length > 0 && g_by)
+                  aggtype_block.hide();
+                target_widget.data('inwidget', new KPIdash.Widget(self, e.target, {
+                  dimension : dim,
+                  group_by : g_by,
+                  dimension2 : dim2,
+                  end_point : end_point,
+                  dimension_label : getRelatedLabel("dimension", dim),
+                  metric_label : getRelatedLabel("metric", g_by),
+                  dimension2_label : getRelatedLabel("dimension", dim2)
+                }, {
+
+                  template : template
+                }));
+              }
+
+            } else {
+              _dataFilter.loadEndPointData("init", _range, end_point);
+            }
+    },
     componentDidMount: function(){
-        $(this.getDOMNode()).draggable();
+        var self=this;
+        $(this.getDOMNode()).filter(".empty").droppable({
+          accept : ".template",
+          activeClass : "ui-state-hover",
+          hoverClass : "ui-state-active",
+          drop : self.handleTemplateDrop
+        });
     },
     randomBetween: function(min, max) {
         return (min + Math.ceil(Math.random() * max));
@@ -27,7 +87,7 @@ var Note = React.createClass({
     },
     renderDisplay: function() {
         return (
-            <div className="note"
+            <div className="note empty"
                 data-ss-colspan={this.props.cols} data-ss-rowspan={this.props.rows}>
                 <div className="widget-content">&nbsp;</div>
                 <span>
@@ -157,6 +217,21 @@ var Board = React.createClass({
 
 React.render(<Board count={50}/>,
     document.getElementById('react-container'));
+
+    $(".draggable.template").draggable({
+      scroll : true,
+      revert : true,
+      cursor : "crosshair",
+      cursorAt : {
+        bottom : 10
+      },
+      helper : "clone",
+      opacity : 0.7,
+      zIndex: 1000
+
+
+
+    });
 
 
 
