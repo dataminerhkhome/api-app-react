@@ -47,7 +47,7 @@ var Board = React.createClass({
           widgetY : 280
 
         };
-        $(this.getDOMNode()).shapeshift(shapeShiftDefaults);
+        $(this.getDOMNode()).find(".board").shapeshift(shapeShiftDefaults);
     },
     add: function(size) {
         var arr = this.state.notes;
@@ -81,12 +81,15 @@ var Board = React.createClass({
             );
     },
     render: function() {
-        return (<div className="board">
-                    {this.state.notes.map(this.eachNote)}
-                    <button className="btn btn-sm btn-success glyphicon glyphicon-plus"
+        return (
+        <section>
+        <button className="btn btn-sm btn-success glyphicon glyphicon-plus"
                             onClick={this.add.bind(null, "New Note")}/>
-            </div>
+           <div className="board">
+                    {this.state.notes.map(this.eachNote)}
 
+            </div>
+        </section>
         );
     }
 });
@@ -94,3 +97,18 @@ var Board = React.createClass({
 
 React.render(<Board count={50}/>,
     document.getElementById('react-container'));
+
+    $(".draggable.template").draggable({
+      scroll : true,
+      revert : true,
+      cursor : "crosshair",
+      cursorAt : {
+        bottom : 10
+      },
+      helper : "clone",
+      opacity : 0.7,
+      zIndex: 1000
+
+
+
+    });
